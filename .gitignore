@@ -19,7 +19,6 @@ bower_components
 framework-commitpush.sh
 framework-createroute.sh
 framework-mysqldump.sh
-ecosystem.config.js
 
 #---- APPLE-SPECIFIC ----#
 #--- SPECIAL-FIX-FOR-ICON › [Icon must end with two \r] ---#
