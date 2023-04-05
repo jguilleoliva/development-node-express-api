@@ -4,8 +4,8 @@ import express                                                         from 'exp
 import { databaseDelete, databasePost, databaseQuery, databaseUpdate } from '../library-database';
 import { jwtMiddlewareVerifyToken }                                    from '../library-security';
 /*--- VARIABLES ---*/
-const router = express.Router();
 /*--- ROUTER ---*/
+const router = express.Router();
 //--- LABEL-ROUTES
 router.get( '/core/user/:userIndex', async( request, response ) => {
 	response.send( await databaseQuery(

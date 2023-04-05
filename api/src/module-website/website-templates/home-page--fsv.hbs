@@ -1,0 +1,104 @@
+{{> partialCommonHeader
+		htmlTagTitle=htmlTagTitle
+		htmlMetaTagDescription=htmlMetaTagDescription }}
+
+<body class="rlr-body">
+    <!-- Main Content -->
+    <main id="rlr-main" class="rlr-main">
+      <!-- Hero Banner -->
+      <aside class="rlr-hero--half-mast">
+        <!-- Header and Navigation -->
+        <div class="rlr-banner__media">
+          <header>{{> partialCommonNavigation}}
+            <div class="outter">
+              <div class="video-container">
+                <video src="https://cdn2.waituk.com/emprise/iStock-1364007793-compressed.mp4" autoplay loop playsinline muted></video>
+                <div class="container rlr-callout">
+                  <div class="rlr-callout__text">
+                    <header class="rlr-banner-splide__header">
+                      <h2 class="rlr-banner-splide__slogan">Explore the exotic world.</h2>
+                      <span class="rlr-banner-splide__sub-title">City tours made for Marco Polo in you</span>
+                    </header>
+                  </div>
+                  <div class="row justify-content-md-center">
+                    <!-- Search banner -->
+                    <form class="rlr-banner-search rlr-banner-search--rounded">
+                      <div class="rlr-banner-search__input-wrapper">
+                        <!-- Destination -->
+                        <div class="rlr-banner-input-group rlr-banner-input-group rlr-banner-input-group--home-search rlr-js-autocomplete-demo rlr-banner-search__banner-input rlr-js-search-layout-wrapper">
+                          <label class="rlr-banner-input-group__label" for="destination_input">
+                            <mark>Location</mark>
+                          </label>
+                          <div class="rlr-banner-input-group__input-wrapper">
+                            <input id="destination_input" name="location" type="text" autocomplete="off" class="rlr-banner-input-group__input destination_input" placeholder="Enter your destination" />
+                            <i class="rlr-icon-font flaticon-map-marker"> </i>
+                            <ul id="home_destination_results" class="rlr-banner-input-group--location-dropdown rlr-autocomplete"></ul>
+                          </div>
+                        </div>
+                        <!-- Activity -->
+                        <div class="rlr-banner-input-group rlr-js-autocomplete-activity-demo rlr-banner-search__banner-input rlr-js-search-layout-wrapper">
+                          <label class="rlr-banner-input-group__label" for="rlr-banner-input-group-activity">
+                            <mark>Activity</mark>
+                          </label>
+                          <div class="rlr-banner-input-group__input-wrapper">
+                            <input id="rlr-banner-input-group-activity" name="activity" type="text" autocomplete="off" class="rlr-banner-input-group__input activity_autocomplete" placeholder="Bungee jump" />
+                            <i class="rlr-icon-font flaticon-outline-down"> </i>
+                            <ul id="autocomplete-results" class="rlr-banner-input-group--activity-dropdown rlr-autocomplete"></ul>
+                          </div>
+                        </div>
+                        <!-- Date -->
+                        <div class="rlr-banner-input-group rlr-banner-search__banner-input rlr-js-search-layout-wrapper">
+                          <label class="rlr-banner-input-group__label" for="rlr-banner-input-group-dates">
+                            <mark>Date</mark>
+                          </label>
+                          <div class="rlr-banner-input-group__input-wrapper">
+                            <input id="rlr-banner-input-group-dates" type="text" autocomplete="off" class="rlr-banner-input-group__input eee_home_search_flatpickr" placeholder="Set dates" />
+                            <i class="rlr-icon-font flaticon-calendar"> </i>
+                            <ul id="home_date_results" class="rlr-banner-input-group--date-dropdown rlr-autocomplete"></ul>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="rlr-banner-search__submit-button" aria-label="banner submit">
+                        <i class="rlr-icon-font flaticon-search"> </i>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="rlr-banner-splide--fullwidth-v2">
+                    <div class="rlr-banner-font">
+                      <a href="search-results--left-sidebar" class="rlr-icon-text rlr-icon-text--anchor rlr-icon-text__block"> <i class="rlr-icon-font flaticon-parachute"> </i> <span class="">Top Experiences </span> </a>
+                      <a href="search-results--left-sidebar" class="rlr-icon-text rlr-icon-text--anchor rlr-icon-text__block"> <i class="rlr-icon-font flaticon-train"> </i> <span class="">Private Tours </span> </a>
+                      <a href="search-results--left-sidebar" class="rlr-icon-text rlr-icon-text--anchor rlr-icon-text__block"> <i class="rlr-icon-font flaticon-temple"> </i> <span class="">Quality First </span> </a>
+                    </div>
+                  </div>
+                  <!-- Footer copyright -->
+                  <div class="container-fluid rlr-footer__legal--v2">
+                    <div class="rlr-footer__legal__row rlr-footer__legal__row--bottom">
+                      <div class="rlr-footer__legal__row__col">
+                        <span>2022 © Railar Solutions</span>
+                      </div>
+                      <nav class="rlr-footer__legal__row__col">
+                        <ul class="rlr-footer__legal--inline">
+                          <li><a href="./about">About</a></li>
+                          <li><a href="./contact">Contact</a></li>
+                          <li><a href="./about">Legal</a></li>
+                        </ul>
+                      </nav>
+                      <!-- Footer payment thumbs -->
+                      <div class="rlr-footer__legal__row__col">
+                        <img src="./static/assets/images/ele-payments.png" alt="Payments" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </aside>
+    </main>
+    <script src="./static/vendors/navx/js/navigation.min.js"></script>
+    <script src="./static/js/main.js"></script>
+    <!-- Uncomment Lines below to Start of ChatBot (www.chatbot.com) code -->
+    <!-- End of ChatBot code -->
+  </body>
+</html>

@@ -1,0 +1,107 @@
+{{> partialCommonHeader
+		htmlTagTitle=htmlTagTitle
+		htmlMetaTagDescription=htmlMetaTagDescription }}
+
+<body class="rlr-body">
+    <!-- Header -->
+    <header>{{> partialCommonNavigation}}</header>
+    <!-- Main Content -->
+    <main id="rlr-main" class="rlr-main--fixed-top">
+      <div class="rlr-section__content--md-top">
+        <div class="rlr-section rlr-section__my">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 rlr-sidebar-menu__mobile">
+                <select class="rlr-sidebar-menu__sub-menu rlr-form-select" id="rlr-js-sub-menu" name="rlr-sub-menu">
+                  <option>Navigate to...</option>
+                  <option value="my-account-pages--dashboard">Dashboard</option>
+                  <option value="my-account-pages--order">Orders</option>
+                  <option value="my-account-pages--subscription">Subscriptions</option>
+                  <option value="my-account-pages--dashboard">Addresses</option>
+                  <option value="my-account-pages--dashboard">Payment Methods</option>
+                  <option value="my-account-pages--dashboard">Account Details</option>
+                  <option value="my-account-pages--dashboard">Logout</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <aside class="rlr-sidebar-menu col-lg-3 col-xs-12 mb-5">
+                <div class="rlr-sidebar-menu__wrapper">
+                  <nav class="rlr-sidebar-menu">
+                    <ul class="rlr-sidebar-menu__desktop">
+                      <li>
+                        <a class="rlr-sidebar-menu__link" href="my-account-pages--dashboard.html">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-dashboard"> </i></span>
+                          Dashboard
+                        </a>
+                      </li>
+                      <li>
+                        <a class="rlr-sidebar-menu__link active" href="my-account-pages--order.html">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-box"> </i></span>
+                          Orders
+                        </a>
+                      </li>
+                      <li>
+                        <a class="rlr-sidebar-menu__link" href="my-account-pages--subscription.html">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-money"> </i></span>
+                          Subscriptions
+                        </a>
+                      </li>
+                      <li>
+                        <a class="rlr-sidebar-menu__link" href="#">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-download"> </i></span>
+                          Downloads
+                        </a>
+                      </li>
+                      <li>
+                        <a class="rlr-sidebar-menu__link" href="#">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-location"> </i></span>
+                          Addresses
+                        </a>
+                      </li>
+                      <li>
+                        <a class="rlr-sidebar-menu__link" href="#">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-wallet"> </i></span>
+                          Payment methods
+                        </a>
+                      </li>
+                      <li>
+                        <a class="rlr-sidebar-menu__link" href="#">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-user"> </i></span>
+                          Account Details
+                        </a>
+                      </li>
+                      <li>
+                        <a class="rlr-sidebar-menu__link" href="#">
+                          <span class="rlr-sidebar-menu__link-icon"><i class="rlr-icon-font flaticon-carbon-logout"> </i></span>
+                          Logout
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </aside>
+              <div class="content col-lg-9 col-xs-12">
+                <div class="woocommerce-MyAccount-content">
+                  <h1 class="type-h3 rlr-data-table__title">Your Subscriptions</h1>
+                  <div class="rlr-myaccount__wrapper">
+                    <div class="woocommerce-MyAccount-content">
+                      <div class="woocommerce-notices-wrapper"></div>
+                      <div class="woocommerce_account_subscriptions">
+                        <p class="no_subscriptions woocommerce-message woocommerce-message--info woocommerce-Message woocommerce-Message--info">You have no active subscriptions. <a class="woocommerce-Button button" href="https://ui.emprise.tours/"> Browse products </a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+	{{>partialCommonFooter}}
+</body>
+</html>

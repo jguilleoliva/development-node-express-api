@@ -5,10 +5,6 @@ import { databaseQuery } from '../library-database';
 /*--- VARIABLES ---*/
 const router = express.Router();
 /*--- ROUTER ---*/
-router.get( '/', async( request, response ) => {
-	response.send( await commonScriptDebug() );
-} );
-
 router.get( '/framework-test', async( request, response ) => {
 	response.send( await commonScriptDebug() );
 } );

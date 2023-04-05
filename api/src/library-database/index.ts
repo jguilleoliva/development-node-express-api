@@ -23,7 +23,7 @@ export const databasePost   = async( postTablename: string, objectPostParameters
 	} );
 	//--- CREATE-REQUEST-ONLY-WITH-THE-TABLE-FIELDS
 	Object.entries( objectPostParameters ).forEach( ( postParameter ) => {
-		if( arrayTableFields.includes( postParameter[ 0 ] )) {
+		if( arrayTableFields.includes( postParameter[ 0 ] ) ) {
 			objectRequestParameters[ postParameter[ 0 ] ] = postParameter[ 1 ];
 		}
 	} );
@@ -47,7 +47,7 @@ export const databaseUpdate = async( updateTablename: string, objectPostParamete
 	} );
 	//--- CREATE-REQUEST-ONLY-WITH-THE-TABLE-FIELDS
 	Object.entries( objectPostParameters ).forEach( ( postParameter ) => {
-		if( arrayTableFields.includes( postParameter[ 0 ] )) {
+		if( arrayTableFields.includes( postParameter[ 0 ] ) ) {
 			objectRequestParameters[ postParameter[ 0 ] ] = postParameter[ 1 ];
 		}
 	} );
@@ -61,11 +61,11 @@ export const databaseUpdate = async( updateTablename: string, objectPostParamete
 	}
 };
 export const databaseDelete = async( deleteTablename: string, objectPostParameters: any ) => {
-	const connection                   = await mysql.createConnection( db );
+	const connection = await mysql.createConnection( db );
 	//--- TRY-CATCH-REQUEST
 	try {
 		return await connection.query( `DELETE FROM ${deleteTablename} WHERE ?`, [ objectPostParameters ] ).then( ( resultObject ) => {
-			return parseDeleteSQL(resultObject, objectPostParameters, deleteTablename)
+			return parseDeleteSQL( resultObject, objectPostParameters, deleteTablename );
 		} );
 	} catch( error ) {
 		console.log( error );
@@ -138,12 +138,12 @@ const parseUpdateSQL = ( objectRequestParameters: any, arrayTableFields: Array<s
 };
 const parseDeleteSQL = ( resultDeleteObject: any, objectRequestParameters: any, deleteTablename: string ): any => {
 	const resultObject = {
-		'request-result':     true,
-		'delete-data-table':  deleteTablename,
-		'delete-data-rows':   objectRequestParameters,
-		'delete-data-specs':  {
-			'delete-rows-deleted':      resultDeleteObject[ 0 ].affectedRows,
-			'delete-byte-size':         new Intl.NumberFormat( 'en-US', {
+		'request-result':    true,
+		'delete-data-table': deleteTablename,
+		'delete-data-rows':  objectRequestParameters,
+		'delete-data-specs': {
+			'delete-rows-deleted': resultDeleteObject[ 0 ].affectedRows,
+			'delete-byte-size':    new Intl.NumberFormat( 'en-US', {
 				style:       'unit',
 				unit:        'byte',
 				unitDisplay: 'long',
